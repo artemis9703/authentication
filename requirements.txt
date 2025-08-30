@@ -4,6 +4,9 @@ cryptography==45.0.6
 Django==5.2.5
 django_db==0.0.7
 fernet==1.0.1
+gunicorn==23.0.0
+packaging==25.0
+pillow==11.3.0
 pyaes==1.6.1
 pycparser==2.22
 PyMySQL==1.1.2
