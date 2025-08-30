@@ -15,6 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
@@ -23,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "django-insecure-7cz&s3%7ozj#xuaw7#hl^k_iop0f6%fcj(y&wve4znv%3lf)s="
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://*.hackclub.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -125,4 +126,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
 
-CSRF_TRUSTED_ORIGINS = ['https://*.hackclub.app']
+#CSRF_TRUSTED_ORIGINS = ['*']
